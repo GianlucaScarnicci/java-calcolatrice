@@ -65,5 +65,27 @@ public class CalcoliHelper {
 			return b;
 		}
 	}
+	//bonus
+	public static double potenza(int base,int esponente) {
+		if(esponente==0) {
+			base=1;
+			return (double)base;
+		}else if(base==0) {
+			return (double)base;
+		}else if (esponente>0) {
+			double a=1;
+		for(int i=0;i<esponente;i++) {
+			a*=base;
+		}
+		return a;
+		}else {
+			double a=1;
+			for(int i=0;i<(-esponente);i++) {
+				a*=1./(double)base;	
+				}
+			return a;
+	}
+
+}
 }
 
